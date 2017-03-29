@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo+GitHub搭建博客及一些感想 | MagicMai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一直想要拥有个人博客，在搜索的过程中，发现可以通过GitHub+Hexo的方法搭建，便尝试跟着做做。教程说的是20分钟搭建好，然而我却用了一个下午，晕~
+搭建过程中主要遇到了以下三个问题：
+安装了Git与Node.js后，在Git Bash中输入 $ npm install -g hexo-cli 安装Hexo时，发生错误：bash: npm: command not found。搜索了一下，重装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+GitHub搭建博客及一些感想">
+<meta property="og:url" content="http://magicmai.com/2017/03/07/0308-Hexo+GitHub搭建博客及一些感想/index.html">
+<meta property="og:site_name" content="MagicMai">
+<meta property="og:description" content="一直想要拥有个人博客，在搜索的过程中，发现可以通过GitHub+Hexo的方法搭建，便尝试跟着做做。教程说的是20分钟搭建好，然而我却用了一个下午，晕~
+搭建过程中主要遇到了以下三个问题：
+安装了Git与Node.js后，在Git Bash中输入 $ npm install -g hexo-cli 安装Hexo时，发生错误：bash: npm: command not found。搜索了一下，重装">
+<meta property="og:updated_time" content="2017-03-29T03:38:54.077Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo+GitHub搭建博客及一些感想">
+<meta name="twitter:description" content="一直想要拥有个人博客，在搜索的过程中，发现可以通过GitHub+Hexo的方法搭建，便尝试跟着做做。教程说的是20分钟搭建好，然而我却用了一个下午，晕~
+搭建过程中主要遇到了以下三个问题：
+安装了Git与Node.js后，在Git Bash中输入 $ npm install -g hexo-cli 安装Hexo时，发生错误：bash: npm: command not found。搜索了一下，重装">
+  
+    <link rel="alternate" href="/atom.xml" title="MagicMai" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">MagicMai</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://magicmai.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-0308-Hexo+GitHub搭建博客及一些感想" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/07/0308-Hexo+GitHub搭建博客及一些感想/" class="article-date">
+  <time datetime="2017-03-07T10:58:35.503Z" itemprop="datePublished">2017-03-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo+GitHub搭建博客及一些感想
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一直想要拥有个人博客，在搜索的过程中，发现可以通过<em>GitHub+Hexo</em>的方法搭建，便尝试跟着做做。教程说的是20分钟搭建好，然而我却用了一个下午，晕~</p>
+<h2 id="搭建过程中主要遇到了以下三个问题："><a href="#搭建过程中主要遇到了以下三个问题：" class="headerlink" title="搭建过程中主要遇到了以下三个问题："></a>搭建过程中主要遇到了以下三个问题：</h2><ol>
+<li><p>安装了Git与Node.js后，在Git Bash中输入 <strong><code>$ npm install -g hexo-cli</code></strong> 安装Hexo时，发生错误：<strong><code>bash: npm: command not found</code></strong>。搜索了一下，重装Node.js，仍然不行，接着再重装Git，在cmd中输入 <strong><code>node -v</code></strong> 和 <strong><code>npm -v</code></strong> 以及 <strong><code>git -v</code></strong> 均显示对应版本号，证明已经安装成功。面对这样的情况，觉得无法可施了。此时看到一个回答说重启，果然，在重启后，按照正常顺序成功安装了Hexo。看到安装成功的窗口，才发现自己花了好长时间。</p>
+</li>
+<li><p>打开 <strong><code>http://localhost:4000/</code></strong> 进行本地预览时，页面无响应。后来通过输入 <strong><code>$ npm install hexo-server --save</code></strong> 得到解决，即需要先安装server。</p>
+</li>
+<li><p>在输入 <strong><code>Hexo deploy</code></strong> 准备部署到网上时，出现了以下一些错误：</p>
+</li>
+</ol>
+<ul>
+<li><strong><code>ERROR Deployer not found: git</code></strong></li>
+<li>解决：输入<br><strong><code>npm install hexo-deployer-git –save</code></strong> 再注销一下，但又出现下一个错误：</li>
+<li><strong><code>fatal: could not read Username for &#39;https://github.com&#39;: no error</code></strong></li>
+<li>解决：把 <em>deploy</em> 的 <em>repo</em> 改为SSH地址（参考了<a href="http://stackoverflow.com/questions/22147574/fatal-could-not-read-username-for-https-github-com-no-such-file-or-directo" target="_blank" rel="external">这里</a>修改）。</li>
+</ul>
+<h2 id="简单说说安装步骤："><a href="#简单说说安装步骤：" class="headerlink" title="简单说说安装步骤："></a>简单说说安装步骤：</h2><p><strong>1. 安装 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></strong></p>
+<p><strong>2. 安装 <a href="https://git-scm.com/" target="_blank" rel="external">Git</a></strong></p>
+<p><strong>3. 注册 <a href="https://github.com/" target="_blank" rel="external">GitHub</a>：</strong> 点击右上角<strong>“New”</strong>创建仓库（repository），仓库名格式：<strong><code>yourname.github.io</code></strong></p>
+<p><strong>4. 生成SSH密匙：</strong> <strong><code>ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code></strong><br>在C:\Users\Administrator.ssh下找到生成的id_rsa.pub，打开复制全文，粘贴到 <a href="https://github.com/settings/keys" target="_blank" rel="external">Add SSH key</a> 。</p>
+<p><strong>5. 安装Hexo：</strong> 在文件夹中打开Git Bash，输入 <strong><code>$ npm install -g hexo-cli</code></strong> 。<br>可以再通过输入 <strong><code>$ hexo</code></strong> 查看是否安装成功。</p>
+<p><strong>6. 建站：</strong><br><code>$ hexo init &lt;folder&gt;  #新建网站存放的文件夹</code><br><code>$ cd &lt;folder&gt;  #进入文件夹</code><br><code>$ npm install  #配置依赖包</code><br><code>$ hexo new &quot;文章标题&quot; #新建一篇文章</code> 也可以到 <em>source/_posts</em> 里手动创建文章。</p>
+<p><strong>7. 配置：</strong><br>在 <code>_config.yml</code> 中修改一些配置（使用 <em>sublime_text</em> 或其它打开）：  </p>
+<p># Site<br><code>title:    网站标题</code><br><code>subtitle:    网站副标题</code><br><code>description:   网站描述</code><br><code>author:   您的名字</code><br><code>language:   网站使用的语言</code><br><code>timezone：  网站时区。</code> <em>Hexo 默认使用您电脑的时区。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">时区列表</a>。比如说：America/New_York, Japan, 和 UTC 。</em><br># URL<br><code>url: http://yoursite.com/</code><br># Deployment<br><code>deploy:</code><br>（空两格）<code>type: git</code><br>（空两格）<code>repo: 刚才新建的github仓库地址.git</code><br>（空两格）<code>branch: master</code></p>
+<p><em>注意：冒号后要空一格</em></p>
+<p><strong>8. 本地预览：</strong><br><code>$ npm install hexo-server --save</code> <em>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用。</em><br><code>$ hexo server</code></p>
+<p><strong>9. 部署博客：</strong><br><code>hexo deploy</code></p>
+<p>最后在浏览器地址栏输入网址，就可以看到在线的博客啦。效果例如 <a href="https://magicmai.github.io/" target="_blank" rel="external">我的博客</a></p>
+<p><strong>此部分的参考资料：</strong><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo文档</a><br><a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">手把手教你建github技术博客</a><br><a href="http://www.jianshu.com/p/e99ed60390a8#" target="_blank" rel="external">20分钟教你使用hexo搭建github博客</a></p>
+<hr>
+<h2 id="一些感想"><a href="#一些感想" class="headerlink" title="一些感想"></a>一些感想</h2><p>虽然花了比教程说的20分钟多很多很多倍的时间才最终完成，但看到最后的在线博客，还是觉得很有成就感。而在这过程中，因为发生这样那样的error，使得自己不断地去搜索，最终解决问题。</p>
+<p>中间有几次觉得很无语，想着要不不做了，但是手还是不停地输入着，点击着，最后也没有放弃。</p>
+<p>在Hexo官网点击主题进去后，发现很多别人做的漂亮的博客，而且里面的文章也是各种让人不明觉厉，那一刻，有点绝望的情绪涌上心头，突然觉得自己很渺小，甚至还不是专业出身，也不年轻，还处于新手的阶段，一步步地学习着，不知道什么时候才能找到想要的工作。</p>
+<p>但是后来又想到，又有谁一开始就是高手呢？</p>
+<p>再过几年我就是30代的人了，10代的自己没有意识到为自己努力的重要性，所以20代的我充满挣扎和迷茫。但是20代的自己已经意识到可以为自己努力，至少能让30代的自己过得好一点吧，我想。</p>
+<p>我不知道未来会如何，但是此刻我只想让自己变成为自己奋斗的自己，努力的自己，坚持的自己，不虚度时光的自己。为了剩下的人生，从此刻就开始积累，现在的挣扎或许能被未来的自己笑着回忆起来，并感谢现在的自己。</p>
+<p>于是，这样想着的我又充满了斗志，带着对坚持后的未来的好奇，继续前进！</p>
+<p>嗯，活着真好。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://magicmai.com/2017/03/07/0308-Hexo+GitHub搭建博客及一些感想/" data-id="cj0ufa9b60000scjxllauj39w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/07/about me/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Welcome！</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/07/0308-Hexo+GitHub搭建博客及一些感想/">Hexo+GitHub搭建博客及一些感想</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/07/about me/">Welcome！</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 MagicMai<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
